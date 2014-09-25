@@ -8,8 +8,8 @@ public:
     Komplex(double real);
     Komplex(double real, double imag);
     void info();
-    Komplex& operator+(Komplex &a);
-    Komplex& operator-(Komplex &b);
+    Komplex operator+(Komplex &a);
+    Komplex operator-(Komplex &b);
 protected:
     double real;
     double imag;

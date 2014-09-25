@@ -22,12 +22,12 @@ void Komplex::info(){
     cout << "Imaginaerteil: " << this->imag << endl;
 }
 
-Komplex& Komplex::operator+(Komplex &a){
+Komplex Komplex::operator+(Komplex &a){
     Komplex zahl(a.real+this->real, a.imag+this->imag);
     return zahl;
 }
 
-Komplex& Komplex::operator-(Komplex &b){
+Komplex Komplex::operator-(Komplex &b){
     Komplex neu(this->real- b.real, this->imag- b.imag);
     return neu;
 }
